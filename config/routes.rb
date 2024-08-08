@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
     root "home#index"
 
-    get "/home", to: "home#index"
-    get "/home/signup", to: "home#signup"
+    post "sign_up", to: "users#create"
+
+    get "sign_up", to: "users#new"
+
+    resources :confirmations, only: [:create, :edit, :new], param: :confirmation_token
 end
