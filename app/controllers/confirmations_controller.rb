@@ -19,7 +19,7 @@ class ConfirmationsController < ApplicationController
 
         if @user.present?
             @user.confirm!
-            redirect_to root_path, notice: "Younr account has been confirmed."
+            login @user
         else
             redirect_to new_confirmation_path, alert: "Invalid token"
         end
