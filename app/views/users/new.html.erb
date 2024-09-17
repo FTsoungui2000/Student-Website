@@ -1,12 +1,12 @@
 <h1>Sign Up</h1>
 
-#Form to sign up that requires an email and password then ask you to confirm email (none of these values can be lefted empty)
+<!-- Form to sign up that requires an email and password then ask you to confirm email (none of these values can be lefted empty) -->
 
 <%= form_with model: @user, url: sign_up_path do |form| %>
     <%= render partial: "shared/form_errors", locals: { object: form.object } %>
     <div>
         <%= form.label :email %>
-        <&= form.email_field :email, required: true %> 
+        <%= form.email_field :email, required: true %> 
     </div>
     <div>
         <%= form.label :password %>

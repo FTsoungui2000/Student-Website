@@ -6,7 +6,7 @@ class UsersController < ApplicationController
         if @user.save
             @user.send_confirmation_email!
         else
-            render :new, :status: :unprocessable_entity
+            render :new, status: :unprocessable_entity
         end
     end
 
@@ -57,5 +57,5 @@ class UsersController < ApplicationController
 
     def update_user_params
         params.require(:user).permit(:current_password, :password, :password_confirmation, :unconfirmed_email)
-
+    end
 end
