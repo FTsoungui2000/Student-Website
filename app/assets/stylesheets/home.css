@@ -1,0 +1,11 @@
+.row {
+    height: 70vh;
+}
+
+#side-panel {  
+    background-color: rgb(11, 22, 42);
+}
+
+#main-panel {
+    text-align: center;
+}
