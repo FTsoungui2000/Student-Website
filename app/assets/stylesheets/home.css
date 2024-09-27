@@ -1,5 +1,7 @@
+/* Home Page */
+
 .row {
-    height: 70vh;
+    height: 75vh;
 }
 
 #side-panel {  
@@ -7,5 +9,12 @@
 }
 
 #main-panel {
+    align-self: center;
     text-align: center;
+}
+
+.home_pic-container {
+    display: flex;
+    height: 500px;
+    margin: auto 0;
 }
