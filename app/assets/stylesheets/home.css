@@ -13,8 +13,7 @@
     text-align: center;
 }
 
-.home_pic-container {
-    display: flex;
-    height: 500px;
-    margin: auto 0;
+.home_image {
+    width: 100%;
+    height: auto;
 }
